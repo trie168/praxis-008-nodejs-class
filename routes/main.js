@@ -4,7 +4,7 @@ const vehicles = require("./vehicle.route");
 const shops = require("./shop.route");
 const auth = require("./auth.route");
 const email = require("./email.route");
-// const reset = require("./resetPassword.route");
+const reset = require("./resetPassword.route");
 
 const routes = app => {
     app.use("/book", vehicles);
@@ -12,7 +12,7 @@ const routes = app => {
     app.use("/user", users);
     app.use("/auth", auth);
     app.use("/email", email);
-    // app.use("/reset", reset);
+    app.use("/reset", reset);
 };
 
 module.exports = routes;

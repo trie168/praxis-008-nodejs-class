@@ -1,7 +1,7 @@
 const ResetPassword = require("../../models/resetPassword.model");
 const User = require("../../models/user.model");
-const { randomKey } = require("../../helpers");
-const SendMail = require("../emails/send.action");
+const { randomKey } = require("../../helpers/helper");
+const SendMail = require("../emails/sendMailtrap.action");
 
 class ForgotPassword {
     constructor(email) {
